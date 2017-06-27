@@ -1,0 +1,115 @@
+.px(@name, @px){
+  @{name}: @px / 18.75rem;
+}
+.page-search{
+	.px(padding-top, 50);
+	.px(min-height, 667);
+	.searchtop{
+		width: 100%;
+		.px(height, 50);
+		.px(padding, 10);
+		background: #f0f0f0;
+		position: fixed;
+		.px(top, 0);
+		.px(left, 0);
+		.inputbox{
+			.px(width, 300);
+			.px(height, 30);
+			background: #fff;
+			overflow: hidden;
+			float: left;
+			border-top-left-radius: 1.3rem;
+			border-bottom-left-radius: 1.3rem;
+			border-top-right-radius: 1.3rem;
+			border-bottom-right-radius: 1.3rem;
+			input{
+				color: #000;
+			    font-size: .8rem;
+			    width: 100%;
+			    height: 100%;
+			    display: block;
+			    background: #fff;
+			    border-radius: .33rem;
+			    padding: .24rem;
+			    padding-left: 1.9rem;
+			    position: relative;
+			    border: none;
+			    outline-style: none;
+			    -webkit-tap-highlight-color: transparent;
+			}
+		}
+		.inputbox::after{
+			content: '';
+		    width: 1rem;
+		    height: 1rem;
+		    background-size: cover;
+		    position: absolute;
+		    left: 1rem;
+		    top: .8rem;
+		    background: url(../assets/333search.png) no-repeat center center/contain;
+		}
+		.searchbtn{
+			display: block;
+			.px(width, 40);
+			height: 100%;
+			float: right;
+			.px(line-height, 30);
+			text-align: center;
+			color: #129aee;
+			.px(font-size, 14);
+		}
+	}
+	.hot-search{
+		height: 50px;
+		overflow: hidden;
+		-webkit-animation: downloadtwo .3s linear;
+				animation: downloadtwo .3s linear;
+		-webkit-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;
+		h4{
+			color: #222;
+		    margin: .84rem 0 1rem .8rem;
+		    font-weight: 400;
+		    .px(font-size, 14);
+		}
+		.hot-list{
+			margin-left: .12rem;
+		    margin-right: .45rem;
+		    overflow: hidden;
+		    text-align: center;
+		    a{
+	    	    color: #999;
+			    padding: 0 .53rem;
+			    height: 1.32rem;
+			    line-height: 1.32rem;
+			    text-align: center;
+			    display: inline-block;
+			    margin-left: 1rem;
+			    margin-bottom: .6rem;
+			    border: 1px solid #e0e0e0;
+			    .px(font-size, 14);
+		    }
+		}
+	}
+	.download{
+		display: block;
+		.px(width, 260);
+		margin: 0 auto;
+	}
+}
+@keyframes downloadtwo{
+	form{
+		height:50px;
+	}
+	to{
+		height:469px;
+	}	
+}
+@-webkit-keyframes downloadtwo{
+	form{
+		height:50px;
+	}
+	to{
+		height:469px;
+	}	
+}
