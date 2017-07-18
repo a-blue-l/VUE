@@ -1,0 +1,51 @@
+.px(@name, @px){
+  @{name}: @px / 18.75rem;
+}
+#nav{
+	width: 100%;
+	.px(height, 50);
+    white-space: nowrap;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    .px(top, 50);
+    z-index: 5;
+    border-bottom: 2/37.5rem solid #b0b0b0;
+    .downclick{
+    	width: 2.7rem;
+	    .px(height, 50);
+	    background: url(../assets/downclick.png) no-repeat 50%;
+	    background-size: 1rem 0.61rem;
+	    float: right;
+	    position: relative;
+    }
+    .list{
+    	height: 100%;
+    	overflow-x: auto;
+    	overflow-y: hidden;
+	    margin-left: .27rem;
+	    .tab{
+	    	font-size: .82rem;
+		    .px(height, 50);
+		    .px(line-height, 50);
+		    margin: 0 .27rem;
+		    display: inline-block;
+	    }
+	    .active{
+	    	font-weight: 700;
+    		color: #129aee;
+	    }
+    }
+    .list::before{
+    	box-sizing: border-box;
+	    margin: 0;
+	    border: 0;
+	    padding: 0;
+    }
+    .list::after{
+    	box-sizing: border-box;
+	    margin: 0;
+	    border: 0;
+	    padding: 0;
+    }
+}
